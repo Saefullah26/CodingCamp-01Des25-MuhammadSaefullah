@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">MyWebsite.com</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li> <li><a href="#headquarters">Headquarters</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content-section">
+            <h1 id="welcome-message">Hi, Welcome to Website</h1> 
+            <p>To deliver an excellent service and quality.</p>
+            
+            <div class="banner-area">
+                <img src="img/img.jpg">
+            </div>
+        </section>
+
+        <section id="headquarters" class="content-section">
+            <h2>Our Headquarter</h2>
+            <div class="headquarters-locations">
+                <div class="location-card">
+            <div class="circle-wrapper" id="jakarta-wrapper">
+                <img src="img/Jakarta.png" alt="jakarta Headquarter Image" id="jakarta-img">
+            </div>
+            <p>Jakarta</p>
+            </div>
+                <div class="location-card">
+            <div class="circle-wrapper" id="bandung-wrapper">
+                <img src="img/bandung.png" alt="Bandung Headquarter Image" id="bandung-img">
+            </div>
+            <p>Bandung</p>
+            </div>
+                <div class="location-card">
+            <div class="circle-wrapper" id="surabaya-wrapper">
+                <img src="img/Surabaya.png" alt="Surabaya Headquarter Image" id="surabaya-img">
+            </div>
+            <p>Surabaya</p>
+            </div>
+        </section>
+
+        <section id="message-us" class="content-section">
+            <h2>Message Us</h2>
+            <div class="form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birth-date">Tanggal Lahir</label>
+                        <input type="date" id="birth-date" name="birth-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                            <label for="male">Laki-Laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">Pesan</label>
+                        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div class="form-output-box">
+                    <h3>Current Data:</h3>
+                    <p>Current Time: <span id="current-time"></span></p>
+                    <p>Nama: <span id="out-name"></span></p>
+                    <p>Tanggal Lahir: <span id="out-birth-date"></span></p>
+                    <p>Jenis Kelamin: <span id="out-gender"></span></p>
+                    <p>Pesan: <span id="out-message"></span></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created By @Saefullah26</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
